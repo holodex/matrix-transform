@@ -5,6 +5,8 @@ module.exports = function (inMatrix, scalar) {
   var ma0 = m.Identity()
   var ma1
   var ma2
+  var outMatrix
+
   ma0[0][3] = scalar[0]
   ma0[1][3] = scalar[1]
 
@@ -17,9 +19,10 @@ module.exports = function (inMatrix, scalar) {
     ma1[1][3] = -scalar[1]
 
     ma2 = m.multiply(matrix, ma0)
-    
-    return m.multiply(ma2, ma1)
+    outMatrix = m.multiply(ma2, ma1)
   } else {
-    return m.multiply(matrix, ma0)
+    outMatrix = m.multiply(matrix, ma0)
   }
+
+  return [outMatrix[0][3], outMatrix[1][3], outMatrix[0][3]]
 }
