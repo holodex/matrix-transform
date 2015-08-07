@@ -1,7 +1,7 @@
 {
   "name": "matrix-zoom",
   "version": "1.0.0",
-  "description": "",
+  "description": "zoom a vector around a point and scale",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js"
