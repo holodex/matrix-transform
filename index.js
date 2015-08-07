@@ -20,18 +20,20 @@ function zoom (current, transform) {
   var transformMatrix = create()
   var outMatrix = create()
 
-  ma0[0*4+3] = current[0] //x
-  ma0[1*4+3] = current[1] //y
+  ma0[3*4+0] = current[0] //x
+  ma0[3*4+1] = current[1] //y
   ma0[0*4+0] = current[2] //k
   ma0[1*4+1] = current[2] //k
 
-  ma1[0*4+3] = transform[0] //x
-  ma1[1*4+3] = transform[1] //y
+  ma1[3*4+0] = transform[0] //x
+  ma1[3*4+1] = transform[1] //y
   ma1[0*4+0] = transform[2]
   ma1[1*4+1] = transform[2]
 
-  ma2[0*4+3] = -transform[0]
-  ma2[1*4+3] = -transform[1]
+  ma2[3*4+0] = -transform[0]
+  ma2[3*4+1] = -transform[1]
+
+  console.log(ma0, ma1, ma2)
 
   multiply(transformMatrix, ma1, ma2)
   multiply(outMatrix, ma0, transformMatrix)
