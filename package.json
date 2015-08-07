@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/holodex/matrix-zoom#readme",
   "dependencies": {
-    "matrix-utilities": "^1.2.4"
+    "gl-mat4": "^1.1.4"
   },
   "devDependencies": {
     "tape": "^4.0.2"
