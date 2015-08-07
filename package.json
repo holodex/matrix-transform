@@ -1,5 +1,5 @@
 {
-  "name": "matrix-transform",
+  "name": "matrix-zoom",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,19 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/holodex/matrix-transform.git"
+    "url": "git+https://github.com/holodex/matrix-zoom.git"
   },
   "keywords": [
     "matrix",
-    "transform",
-    "coordinates"
+    "zoom",
+    "position",
+    "coordinates",
+    "scale"
   ],
   "author": "holodex",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/holodex/matrix-transform/issues"
+    "url": "https://github.com/holodex/matrix-zoom/issues"
   },
-  "homepage": "https://github.com/holodex/matrix-transform#readme",
+  "homepage": "https://github.com/holodex/matrix-zoom#readme",
   "dependencies": {
     "matrix-utilities": "^1.2.4"
   }
